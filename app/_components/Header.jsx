@@ -16,8 +16,8 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="2xl:hidden absolute z-40 left-0 top-0 right-0">
-      <div className="container mx-auto">
-        <div className="flex items-center justify-between py-6">
+      <div className="container mx-auto bg-primary">
+        <div className="flex items-center justify-between py-6 ">
           {/* Logo  */}
           <Logo />
           {/* nav mobile - (Sheet Component)  */}

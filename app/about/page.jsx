@@ -48,7 +48,7 @@ const About = () => {
             </div>
           </div>
 
-          <ScrollArea className="w-full h-[680px]">
+          <ScrollArea className="w-full h-[680px] mt-[70px]">
             <div>
               <div>
                 <div className="flex items-center gap-3 mb-4">

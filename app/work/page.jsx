@@ -114,15 +114,15 @@ const Work = () => {
         opacity: 1,
         transition: { delay: 1.2, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-screen flex items-center py-24 xl:py-0"
+      className="min-h-screen flex items-center  xl:py-0 "
     >
       <div className="containere mx-auto w-full h-full flex flex-col justify-center">
-        <h2 className="h2 mb-6 xl:mb-12 max-w-[600px]">
+        <h2 className="h2 mb-4 xl:mb-12 max-w-[600px]">
           My Latest <span className="text-accent">Work</span>
         </h2>
         <Tabs
           defaultValue="frontend"
-          className={"w-full flex flex-col gap-6 xl:gap-12"}
+          className={"w-full flex flex-col gap-6 xl:gap-12 border-2"}
         >
           {/* tabs list  */}
           <TabsList
@@ -146,7 +146,7 @@ const Work = () => {
           </TabsList>
 
           {/* tabs content  */}
-          <div className="h-[460px] work-custom-scroll xl:overflow-y-visible ">
+          <div className="h-[480px] work-custom-scroll xl:overflow-y-visible">
             {categories.map((category) => {
               return (
                 <TabsContent key={category} value={category}>
@@ -156,9 +156,9 @@ const Work = () => {
                       .map((project) => {
                         return (
                           <SwiperSlide key={project.id} className="h-full">
-                            <div className="flex flex-col xl:flex-row gap-8 xl:gap-12">
+                            <div className="flex flex-col xl:flex-row gap-5 xl:gap-12 mb-10">
                               {/* project info  */}
-                              <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-none">
+                              <div className="w-full max-w-[380px] flex flex-col gap-2 xl:gap-8 xl:pt-6 order-2 xl:order-none">
                                 <h3 className="h3">{project.title}</h3>
                                 {/* tech / */}
                                 <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
@@ -178,15 +178,15 @@ const Work = () => {
                                 </div>
 
                                 {/* btns */}
-                                <div className="flex flex-col sm:flex-row gap-4 items-start">
+                                <div className="flex flex-row gap-4 items-start">
                                   <Link href={project.link}>
-                                    <button className="btn btn-sm btn-accent flex gap-2">
+                                    <button className="px-2 py-2 rounded-4xl btn-accent flex items-center  gap-2">
                                       <MdArrowOutward className="text-xl" />
                                       Live Project
                                     </button>
                                   </Link>
                                   <Link href={project.github}>
-                                    <button className="btn btn-sm btn-white flex gap-2">
+                                    <button className="px-2 py-2 rounded-4xl btn-white flex  items-center gap-2">
                                       <MdArrowOutward className="text-xl" />
                                       Github Repo
                                     </button>

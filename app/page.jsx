@@ -23,8 +23,8 @@ const Home = () => {
 
       <div className="flex flex-col xl:flex-row items-center justify-between w-full">
         {/* Text  */}
-        <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left">
-          <h1 className="h1 flex-1  mb-[28px]">
+        <div className="w-full xl:w-[560px] flex flex-col items-center xl:items-start text-center xl:text-left">
+          <h2 className="h2 flex-1 mb-[28px]">
             Hi! I'm Mahmud,
             <br />
             <TypeAnimation
@@ -35,7 +35,7 @@ const Home = () => {
               repeat={Infinity}
               cursor={false}
             />
-          </h1>
+          </h2>
           <p className="max-w-[500px] mb-[44px]">
             I build visually captivating, user-friendly websites and web apps
             that tranform your idesas into seamless, engaging digital

@@ -44,7 +44,7 @@ const Services = () => {
         opacity: 1,
         transition: { delay: 1.2, duration: 0.4, ease: "easeIn" },
       }}
-      className="h-screen flex items-center"
+      className="h-screen flex items-center mt-10"
     >
       <div className="container mx-auuto w-full flex flex-col gap-16">
         {/* text  */}
@@ -83,6 +83,7 @@ const Services = () => {
                     </div>
                   </div>
                   <h5 className="text-[22px] font-medium max-w-[230px]">{item.title}</h5>
+                  
                 </div>
               </SwiperSlide>
             );
